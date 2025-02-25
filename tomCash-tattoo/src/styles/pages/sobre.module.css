@@ -1,0 +1,18 @@
+body{
+    background-color: #121212;
+}
+
+.sobre_container{
+    background-color: #2f2e2e;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+.text{
+    color: #fff;
+    font-size: 1rem;
+}
