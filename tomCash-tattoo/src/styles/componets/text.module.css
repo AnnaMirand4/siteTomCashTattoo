@@ -1,0 +1,22 @@
+.text {
+    align-items: center;
+    text-align:justify;
+    font-size: 1rem;
+    color: var(--text-color1);
+    padding-bottom: 1rem;
+    width: 100%;
+    font-family: "Lora", serif;
+   
+}
+
+@media screen and (max-width: 768px) {
+    .text {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .text {
+        font-size: 0.8rem;
+    }
+}

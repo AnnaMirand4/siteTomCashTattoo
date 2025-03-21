@@ -1,0 +1,13 @@
+.logo {
+    width: 120px;
+    
+    
+}
+
+.image_logo {
+    width: 100%;
+    height: auto;
+    border-radius: 60px;
+    border: 4px solid var(--details-color);
+  
+}

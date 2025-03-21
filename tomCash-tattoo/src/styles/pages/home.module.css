@@ -1,0 +1,37 @@
+.home_container{
+    display: flex;
+    flex-direction: column;
+    max-width:100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.quote_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    background-color: var(--background-color);
+    color: var(--details-color);
+}
+
+.quote{
+    display: flex;
+    flex-direction:row;
+    font-size: 1.5rem;
+    font-weight: 700;
+    padding: 2rem;
+    text-align: center;
+    font-family:'Rock Salt', cursive;
+    gap: 10px;
+}
+
+.author{
+    font-size: 0.8rem;
+    font-weight: 400;
+    padding-bottom: 1rem;
+    font-family: 'Lora', serif;
+
+}
+

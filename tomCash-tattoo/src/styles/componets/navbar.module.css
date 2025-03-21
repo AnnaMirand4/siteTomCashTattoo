@@ -1,6 +1,6 @@
 .navbar_container{
     display: flex;
-    justify-content:flex-end;
+    justify-content:center;
     gap:20px;
     list-style: none;
     position: fixed;
@@ -9,7 +9,8 @@
     width: 100%;
     z-index: 1000; /* Z-index alto para ficar acima do carrossel */
     padding: 10px 20px;
-        
+    align-items: center;
+    background-color: transparent;    
 }
 
 .navbar_Link {
@@ -17,6 +18,7 @@
     color: #fff;
     font-size: 1rem;
     margin-right: 2rem;
+    font-family:"Lora", serif;
   }
 
 
@@ -52,7 +54,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: #545255;
+    background: var(--details-color);
     transition: 0.5s;
     transform-origin: right;
     transform: scaleX(0);
@@ -64,3 +66,4 @@
     transform-origin: left;
     transform: scaleX(1);
 }
+

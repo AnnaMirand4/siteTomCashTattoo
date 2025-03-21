@@ -1,5 +1,6 @@
 import {Link} from 'react-router-dom'
 import style from '../styles/componets/navbar.module.css'
+import Logo from './Logo'
 
 const Navbar = () => {
   return (
@@ -9,6 +10,10 @@ const Navbar = () => {
         </li>
         <li>
             <Link className={style.navbar_Link} to='/sobre'>Sobre</Link>
+        </li>
+        <Logo className= {style.logo}/>
+        <li>
+            <Link className={style.navbar_Link} to='/galeira'>Galeria</Link>
         </li>
         <li>
             <Link className={style.navbar_Link} to='/orçamento'>Orçamento</Link>

@@ -1,16 +1,58 @@
 import React from 'react'
 import style from '../styles/pages/sobre.module.css'
+import Title from '../components/Title'
+import Text from '../components/Text'
 const Sobre = () => {
   return (
     <>
-    <div className={style.sobre_container}>
-      <div className={style.text}>
-        <h1>Quem é o Tatuador?</h1>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Praesentium, earum minus! Reprehenderit, voluptate optio doloribus blanditiis, numquam sint in non culpa excepturi, eos vero ipsam provident dicta nulla dignissimos unde?
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, eos aut. Quasi vitae aspernatur quo provident odit voluptate dolore temporibus, reprehenderit dolores nisi id omnis officiis animi sed cumque! Ipsa?
 
-        </p>
-        </div>
+    <div className={style.container}>
+
+      <div className={style.sobre}>
+        <div className={style.text}>
+
+          <Title content= 'Quem é o Tatuador'/>
+          <Text content= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            <br/>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            
+            ' 
+            
+          />
+
+          <Text content= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            <br/>
+
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
+            Vitae odit autem modi accusantium?
+            
+            ' 
+            
+          />
+          
+          </div>
+      </div>
+
     </div>
     </>
   )

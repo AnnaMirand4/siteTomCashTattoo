@@ -2,5 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: 0;
-    font-family: "Roboto Serif", serif;
 }
+
+:root {
+    --background-1: #121212;
+    --background-2: #2f2e2e;
+    --text-color1: #ffffff;
+    --text-color2: #f2f2f2;
+    --details-color: #C99E67;
+}
+
