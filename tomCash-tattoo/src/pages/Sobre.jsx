@@ -6,7 +6,7 @@ const Sobre = () => {
   return (
     <>
 
-    <div className={style.container}>
+    <main className={style.container}>
 
       <div className={style.sobre}>
         <div className={style.text}>
@@ -18,7 +18,6 @@ const Sobre = () => {
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
             Vitae odit autem modi accusantium?
-            <br/>
 
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
@@ -36,8 +35,6 @@ const Sobre = () => {
             Vitae odit autem modi accusantium?
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
-            Vitae odit autem modi accusantium?
-            <br/>
 
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
             Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
@@ -53,7 +50,7 @@ const Sobre = () => {
           </div>
       </div>
 
-    </div>
+    </main>
     </>
   )
 }

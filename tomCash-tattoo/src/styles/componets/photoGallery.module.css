@@ -1,0 +1,45 @@
+.gallery {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+  
+  
+  .image-gallery-slide img {
+    max-height: 80vh;
+    object-fit: contain;
+  }
+  
+  .image-gallery-thumbnails-container {
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 768px) {
+    .image-gallery-slide img {
+      max-height: 55vh;
+    }
+  
+    .image-gallery-thumbnail {
+      width: 60px;
+      height: 60px;
+    }
+  }
+  
+  /* Para telas bem pequenas (celulares) */
+  @media (max-width: 480px) {
+    .gallery {
+      padding: 0 5px; 
+    }
+  
+    .image-gallery-slide img {
+      max-height: 45vh;
+    }
+  
+    .image-gallery-thumbnail {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  

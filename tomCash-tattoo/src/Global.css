@@ -1,7 +1,11 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden; /* Impede rolagem horizontal */
 }
 
 :root {
@@ -11,4 +15,6 @@
     --text-color2: #f2f2f2;
     --details-color: #C99E67;
 }
+
+
 

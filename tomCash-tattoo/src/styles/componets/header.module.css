@@ -1,13 +1,17 @@
-.header_container{
+.header_container {
     width: 100%;
     height: 400px;
     overflow: hidden;
     position: relative;
-    z-index: 1;
+    z-index: 1; /* Agora o Swiper está abaixo da navbar */
 }
 
-.image{
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.swiper {
+    position: relative;
 }

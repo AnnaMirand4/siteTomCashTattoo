@@ -6,9 +6,9 @@ import 'swiper/css/autoplay';
 
 
 
-import image1 from'../assets/tattoo1.jpg'
-import image2 from '../assets/tattoo2.jpg'
-import image3 from '../assets/tattoo3.jpg'
+import image1 from'../assets/IMG_10.jpg'
+import image2 from '../assets/IMG_2.jpg'
+import image3 from '../assets/IMG_4.jpg'
 
 
 function Header() {
@@ -19,6 +19,7 @@ function Header() {
     <>
     <header className={style.header_container}>
         <Swiper
+          className={style.swiper}
           spaceBetween={0}
           slidesPerView={1}
           modules={[Autoplay]}

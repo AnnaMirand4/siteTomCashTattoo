@@ -1,0 +1,18 @@
+.subtitle {
+    align-items: flex-start;
+    font-family: 'Rock Salt', cursive;
+    color: var(--details-color);
+    padding-bottom: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+    .subtitle {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .subtitle {
+        font-size: 0.9rem;
+    }
+}

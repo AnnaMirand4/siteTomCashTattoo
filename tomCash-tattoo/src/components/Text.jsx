@@ -1,4 +1,4 @@
-import style from '../styles/componets/text.module.css';
+import style from '../styles/componets/text.module.css'
 
 const Text = ({content}) => {
   return (

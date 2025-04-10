@@ -1,0 +1,50 @@
+.galleryContainer {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 4rem 1rem;
+}
+
+.sectionGallery {
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto 3rem;
+}
+
+.articleGallery {
+  margin-bottom: 3rem;
+  padding: 2rem;
+}
+
+/* Responsividade para tablets */
+@media (max-width: 768px) {
+  .galleryContainer {
+      padding: 2rem 1rem;
+  }
+  
+  .sectionGallery {
+      font-size: 1.5rem;
+  }
+  
+  .articleGallery {
+      padding: 1rem;
+      margin-bottom: 2rem;
+  }
+}
+
+/* Responsividade para celulares */
+@media (max-width: 480px) {
+  .galleryContainer {
+      padding: 1rem;
+  }
+
+  .sectionGallery {
+      font-size: 1rem;
+      margin-bottom: 1.5rem;
+  }
+
+  .articleGallery {
+      padding: 0.5rem;
+  }
+}
