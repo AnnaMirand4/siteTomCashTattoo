@@ -15,9 +15,9 @@ const Galeria = () => {
       <section className={style.sectionGallery}>
 
         <Title content= 'Conheça meu trabalho' />
-        <Text content= 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Accusantium, sed nihil ducimus rerum doloremque cupiditate repellendus facilis repudiandae maxime non, quo necessitatibus aliquid blanditiis voluptatum. 
-            Vitae odit autem modi accusantium?' />
+        <Text content= 'Trabalho com uma variedade de estilos com os quais me identifico profundamente — entre eles, boldline, old school, traços inspirados em animes e desenhos autorais. Também exploramos misturas criativas de estilos, como realismo com elementos gráficos ou traços minimalistas combinados com texturas orgânicas, o que permite entregar tatuagens verdadeiramente únicas.
+          Gosto especialmente de usar cor como se estivesse pintando um quadro com tinta a óleo — com profundidade, textura e intenção. Essa diversidade permite que cada pessoa encontre um estilo que converse com sua identidade e história — sempre com acompanhamento técnico e artístico especializado.
+          Mais do que estética, cada tatuagem pode ser um gesto de afirmação, uma escolha que carrega memória, sentimento ou até mesmo um posicionamento político e social. Tatuar é transformar pensamento em imagem, ideia em presença viva sobre a pele.'/>
 
         <article className={style.articleGallery}>
           <Subtitle content= 'Aqui alguns trabalhos já feitos' />
