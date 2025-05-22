@@ -23,29 +23,40 @@ const Orçamento = () => {
     <section className={style.steps_container}>
 
       <div className={style.steps_title}>
-        <Title content='Vamos ao passo a passo para construir seu orçamento'/>
+        <Title content='Termos e condições para orçamento, agendamento e pagamento de tatuagem:'/>
       </div>
 
       <div className={style.steps}>
 
         <div className={style.steps_content}>
-          <Subtitle content='1.'/> <Text content='Entre em contato, se identique e envie sua ideia'/>
+          <Subtitle content='1- Orçamento Aprovado:'/> <Text content='para que possamos desenvolver sua arte especialmente pra você e deixarmos tudo preparado para te atender um sinal será cobrado para confirmação do serviço:
+            30% do valor total caso a arte já esteja pronta, com ajustes pequenos.
+            50% do valor total caso a arte seja autoral e necessite ser criada do início.
+            Processo Criativo: Para artes autorais, após o pagamento do sinal:
+            Esboços serão enviados para alinhamento de expectativas entre as partes.
+            A arte final será enviada com até 24 horas de antecedência da data do procedimento.'/>
         </div>
 
         <div className={style.steps_content}>
-          <Subtitle content='2.'/> <Text content='Descreva detalhes e envie referênicas visais, se tiver'/>
+          <Subtitle content='2- Agendamento'/> <Text content='Pagamento do Sinal:
+            A data e horário escolhidos para o procedimento só serão confirmados mediante o pagamento do sinal (e0% ou 50%, conforme descrito acima).
+            O cliente deverá realizar o pagamento do sinal no ato do agendamento, garantindo a reserva do horário.
+            O pagamento do sinal deve ser realizado via Pix ou transferência bancária.'/>
         </div>
 
         <div className={style.steps_content}>
-          <Subtitle content='3.'/> <Text content='Me informe em qual área do corpo pretende tatuar e o tamanho da tattoo'/>
+          <Subtitle content='3. Pagamento'/> <Text content='Pagamento do Procedimento : O saldo do valor total da tatuagem deverá ser quitado no dia do procedimento.
+            Mesmo para tatuagens que necessitam de mais de uma sessão, o valor integral da tatuagem também deve ser pago antes do início da primeira sessão
+            Formas de Pagamento: 
+            Pix/transferência bancária ou dinheiro.
+            Cartões de débito.
+            Cartões de crédito (parcelamento em até 12x, com juros).
+            Observações Importantes'/>
         </div>
 
-        <div className={style.steps_content}>
-          <Subtitle content='4.'/> <Text content='Te informo valores e cuidados pré tatuagem'/>
-        </div>
-
-        <div className={style.steps_content}>
-          <Subtitle content='5.'/> <Text content='Marcamos um horário e data'/>
+        <div className={style.steps_alert}>
+          <Subtitle content='Atenção'/> <Text content='O valor do sinal não é reembolsável em casos de desistência por parte do cliente, salvo em situações previamente discutidas e acordadas.
+            Alterações no agendamento devem ser comunicadas com antecedência.'/>
         </div>
 
       </div>

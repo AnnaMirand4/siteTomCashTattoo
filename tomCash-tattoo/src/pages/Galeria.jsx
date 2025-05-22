@@ -4,17 +4,40 @@ import Title from '../components/Title'
 import Subtitle from '../components/Subtitle'
 import Text from '../components/Text'
 
+import { useEffect, useRef } from 'react'
+
 import tattooPhoto from '../data/tattooPhoto'
 import tattooSelos from '../data/tattooSelos'
 
 
 
 const Galeria = () => {
+  
+  const titleRef = useRef();
+  const textRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__animated', 'animate__fadeInDown');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (titleRef.current) observer.observe(titleRef.current);
+    
+    return () => {
+      if (titleRef.current) observer.unobserve(titleRef.current);
+    };
+  }, []);
+  
   return (
     <main className={style.galleryContainer}>
       <section className={style.sectionGallery}>
-
+        <div ref={titleRef}>
         <Title content= 'Conheça meu trabalho' />
+        </div>
         <Text content= 'Trabalho com uma variedade de estilos com os quais me identifico profundamente — entre eles, boldline, old school, traços inspirados em animes e desenhos autorais. Também exploramos misturas criativas de estilos, como realismo com elementos gráficos ou traços minimalistas combinados com texturas orgânicas, o que permite entregar tatuagens verdadeiramente únicas.
           Gosto especialmente de usar cor como se estivesse pintando um quadro com tinta a óleo — com profundidade, textura e intenção. Essa diversidade permite que cada pessoa encontre um estilo que converse com sua identidade e história — sempre com acompanhamento técnico e artístico especializado.
           Mais do que estética, cada tatuagem pode ser um gesto de afirmação, uma escolha que carrega memória, sentimento ou até mesmo um posicionamento político e social. Tatuar é transformar pensamento em imagem, ideia em presença viva sobre a pele.'/>

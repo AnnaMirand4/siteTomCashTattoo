@@ -2,12 +2,13 @@
     align-items: flex-start;
     font-family: 'Rock Salt', cursive;
     color: var(--details-color);
-    padding-bottom: 3rem;
+    padding-bottom: 1rem;
 }
 
 @media screen and (max-width: 768px) {
     .subtitle {
         font-size: 1rem;
+        align-items: center;
     }
 }
 

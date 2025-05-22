@@ -1,9 +1,39 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
 .image {
-    width: 150px;
-    box-shadow: 5px 10px 15px rgba(201, 158, 103, 0.5);
+    width: 100px;
+    border-radius: 60%;
+    border: 4px solid var(--details-color);
     transition: box-shadow 0.3s ease; 
 }
 
 .image:hover {
     box-shadow: 5px 10px 20px rgba(201, 158, 103, 0.7); 
+}
+
+.name{
+    margin-top: 1rem;
+    padding: 0.5rem;
+    font-family: 'Rock Salt';
+    color: var(--details-color);
+    font-size: 0.9rem;
+    border-radius: 25%;
+    background-color: var(--background-2);
+    
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+    .image {
+        transition: box-shadow 0.3s ease;
+        box-shadow: 5px 10px 20px rgba(201, 158, 103, 0.7);
+    }
+ 
 }

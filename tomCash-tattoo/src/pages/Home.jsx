@@ -1,12 +1,16 @@
-import React from 'react'
 import { FaInstagram, FaQuoteLeft, FaQuoteRight, FaRegClock, FaTiktok } from 'react-icons/fa'
 import style from '../styles/pages/home.module.css'
 import GoogleReviews from '../components/GoogleReviews'
 import ImageM from '../components/ImageM'
 
-import tattoo1 from '../assets/tattoos/IMG_15.jpg'
-import tattoo2 from '../assets/tattoos/IMG_16.jpg'
-import tattoo3 from '../assets/selos/IMGselo_5.jpg'
+import { useEffect, useRef } from 'react';
+
+import tattoo1 from '../assets/estilos/IMG_1.jpg'
+import tattoo2 from '../assets/estilos/IMG_2.jpg'
+import tattoo3 from '../assets/estilos/IMG_3.jpg'
+import tattoo4 from '../assets/estilos/IMG_4.jpg'
+import tattoo5 from '../assets/estilos/IMG_5.jpg'
+import tattoo6 from '../assets/estilos/IMG_6.jpg'
 import Text from '../components/Text'
 import Button from '../components/button'
 import Subtitle from '../components/Subtitle'
@@ -17,13 +21,34 @@ import { GiMonkey } from 'react-icons/gi'
 
 
 const Home = () => {
+
+  const titleRef = useRef();
+  const textRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (titleRef.current) observer.observe(titleRef.current);
+    
+    return () => {
+      if (titleRef.current) observer.unobserve(titleRef.current);
+    };
+  }, []);
+
+
   return (
     <>
   
       <main className={style.home_container}>
         <div className={style.quote_container}>
 
-          <div className={style.quote}>
+          <div ref={titleRef} className={style.quote}>
 
             <div><FaQuoteLeft /></div>
             <q>
@@ -53,13 +78,18 @@ const Home = () => {
             Sua dedicação à arte corporal vai além da execução: ele valoriza o processo de criação em conjunto com cada cliente, garantindo que cada tatuagem seja única e carregada de significado.' />
 
           </div>
+
+    
         </section>
 
         <section className={style.miniGallery_container}>
           <div className={style.miniGallery}>
-            <ImageM img={tattoo1}/>
-            <ImageM img={tattoo2}/>
-            <ImageM img={tattoo3}/>
+            <ImageM img={tattoo1} content='blackwork'/>
+            <ImageM img={tattoo2} content='Fine line'/>
+            <ImageM img={tattoo3} content='Colorido'/> 
+            <ImageM img={tattoo4} content='Anime'/>
+            <ImageM img={tattoo5} content='Realismo'/>
+            <ImageM img={tattoo6} content='Artístico'/>
           </div>
           <div className={style.text_miniGallery}>
             <Text content='Que tal conhecer sobre o meu trabalho? Você pode visitar a galeria clicando no botão abaixo ou acessar a galeria pelo menu lá em cima. La é você esncontrará trabalhos concluídos, meu projeto com os selo e ainda pode escolher uma arte para você!' />
@@ -93,7 +123,9 @@ const Home = () => {
         </section>
 
         <section className={style.localization}>
+          <div className={style.card_title}>
           <Subtitle content='Saiba onde me encontrar, acompanhe minhas redes' />
+          </div>
           <div className={style.card_container}>
 
           <div className={style.card}>

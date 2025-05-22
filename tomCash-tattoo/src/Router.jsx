@@ -6,6 +6,7 @@ import Header from "./components/Header"
 import Navbar from "./components/Navbar"
 import Galeria from "./pages/Galeria"
 import Footer from "./components/Footer"
+import WhatsAppButton from "./components/WhatsAppButton"
 
 
 const Router = () => {
@@ -13,6 +14,7 @@ const Router = () => {
     <BrowserRouter>
     <Navbar />
     <Header />
+    <WhatsAppButton />
     <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="sobre" element={<Sobre />}/>

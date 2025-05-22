@@ -23,23 +23,34 @@ body {
   box-sizing: border-box;
 }
 
-.text {
+.text_container {
   display: flex;
   flex-direction: row;
   gap: 2rem;
   align-items: flex-start;
   margin-bottom: 2rem;
-  flex-wrap: wrap;
+}
+
+.text {
+  flex: 1;
+  min-width: 0; /* Permite que o texto quebre corretamente */
+}
+
+.image_wrapper {
+  flex: 1;
+  min-width: 0;
 }
 
 .image {
   width: 40%;
+  max-width: 100%;
+  height: auto;
   box-shadow: 5px 10px 15px rgba(201, 158, 103, 0.5);
   transition: box-shadow 0.3s ease;
   border-radius: 5px;
-  height: auto;
   margin-top: 2rem;
 }
+
 
 .image:hover {
   box-shadow: 5px 10px 20px rgba(201, 158, 103, 0.7);
@@ -79,7 +90,7 @@ body {
     padding: 2rem;
   }
 
-  .text {
+  .text_container {
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
