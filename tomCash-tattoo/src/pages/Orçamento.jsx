@@ -4,8 +4,31 @@ import Subtitle from '../components/Subtitle'
 import style from '../styles/pages/orçamento.module.css'
 import { IoLogoWhatsapp } from 'react-icons/io'
 
+import { useEffect, useRef } from 'react'
+
 
 const Orçamento = () => {
+
+  const alertRef = useRef();
+  const textRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate__animated', 'animate__fadeInRight');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    if (alertRef.current) observer.observe(alertRef.current);
+
+    return () => {
+      if (alertRef.current) observer.unobserve(alertRef.current);
+    };
+  }, []);
+
+
   return (
     <>
     <main className={style.main_container}>
@@ -54,9 +77,18 @@ const Orçamento = () => {
             Observações Importantes'/>
         </div>
 
-        <div className={style.steps_alert}>
+        <div ref={alertRef} className={style.steps_alert}>
           <Subtitle content='Atenção'/> <Text content='O valor do sinal não é reembolsável em casos de desistência por parte do cliente, salvo em situações previamente discutidas e acordadas.
             Alterações no agendamento devem ser comunicadas com antecedência.'/>
+        </div>
+
+        <div className={style.steps_content}>
+          <Subtitle content='Horário de atendimento'/> 
+          <Text content='8h às 23:30
+            Sábado
+            8h às 22h
+            Domingo
+            8h às 22h'/>
         </div>
 
       </div>

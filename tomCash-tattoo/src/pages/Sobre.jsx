@@ -97,7 +97,7 @@ const Sobre = () => {
             showFullscreenButton={window.innerWidth > 768} 
             slideInterval={5000}
             slideOnThumbnailOver={false}
-            showNav={true}
+            showNav={false}
             autoPlay={true}
           />
         </div>

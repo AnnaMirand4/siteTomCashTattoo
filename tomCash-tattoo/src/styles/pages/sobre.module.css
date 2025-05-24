@@ -84,7 +84,7 @@ body {
   margin: 4rem 0 0 0.5rem;
 }
 
-/* Responsividade para tablets */
+
 @media (max-width: 1024px) {
   .container {
     padding: 2rem;
@@ -115,7 +115,7 @@ body {
   }
 }
 
-/* Responsividade para celulares */
+
 @media (max-width: 600px) {
   .container {
     padding: 1rem;
@@ -127,6 +127,10 @@ body {
 
   .image {
     margin-top: 1rem;
+  }
+
+  .studio_text {
+    padding: 0;
   }
 
   .image-gallery-slide img {
