@@ -1,4 +1,3 @@
-import React from 'react'
 import image from '../assets/logo1.png'
 import style from '../styles/componets/logo.module.css'
 

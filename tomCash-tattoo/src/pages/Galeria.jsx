@@ -1,12 +1,12 @@
-import PhotoGallery from '../components/PhotoGallery'
+import PhotoGallery from '../components/PhotoGallery.jsx'
 import style from '../styles/pages/galeria.module.css'
-import Title from '../components/Title'
-import Subtitle from '../components/Subtitle'
-import Text from '../components/Text'
+import Title from '../components/Title.jsx'
+import Subtitle from '../components/Subtitle.jsx'
+import Text from '../components/Text.jsx'
 
 
-import tattooPhoto from '../data/tattooPhoto'
-import tattooSelos from '../data/tattooSelos'
+import tattooPhoto from '../data/tattooPhoto.js'
+import tattooSelos from '../data/tattooSelos.js'
 
 
 

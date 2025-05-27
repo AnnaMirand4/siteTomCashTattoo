@@ -1,7 +1,7 @@
 import { FaInstagram, FaQuoteLeft, FaQuoteRight, FaRegClock, FaTiktok } from 'react-icons/fa'
 import style from '../styles/pages/home.module.css'
 import GoogleReviews from '../components/GoogleReviews'
-import ImageM from '../components/ImageM'
+import ImageM from '../components/ImageM.jsx'
 
 
 
@@ -11,12 +11,12 @@ import tattoo3 from '../assets/estilos/IMG_3.jpg'
 import tattoo4 from '../assets/estilos/IMG_4.jpg'
 import tattoo5 from '../assets/estilos/IMG_5.jpg'
 import tattoo6 from '../assets/estilos/IMG_6.jpg'
-import Text from '../components/Text'
-import Button from '../components/button'
-import Subtitle from '../components/Subtitle'
-import Title from '../components/Title'
+import Text from '../components/Text.jsx'
+import Button from '../components/Button.jsx'
+import Subtitle from '../components/Subtitle.jsx'
+import Title from '../components/Title.jsx'
 import { FaLocationDot, FaLocationPin } from 'react-icons/fa6'
-import ErrorBoundary from '../components/ErrorBoundary'
+import ErrorBoundary from '../components/ErrorBoundary.jsx'
 import { GiMonkey } from 'react-icons/gi'
 
 

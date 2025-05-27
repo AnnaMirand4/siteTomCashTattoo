@@ -1,14 +1,14 @@
 import style from '../styles/pages/sobre.module.css'
-import Title from '../components/Title'
-import Text from '../components/Text'
+import Title from '../components/Title.jsx'
+import Text from '../components/Text.jsx'
 import img1 from '../assets/tatuador e studio/airton1.png'
 import img2 from '../assets/tatuador e studio/airton2.png'
 import { useEffect, useRef } from 'react';
 import 'animate.css';
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
-import images from '../data/studioPhoto'
-import Subtitle from '../components/Subtitle'
+import images from '../data/studioPhoto.js'
+import Subtitle from '../components/Subtitle.jsx'
 
 
 
