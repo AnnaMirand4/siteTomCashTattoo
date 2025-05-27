@@ -3,7 +3,7 @@ import style from '../styles/pages/home.module.css'
 import GoogleReviews from '../components/GoogleReviews'
 import ImageM from '../components/ImageM'
 
-import { useEffect, useRef } from 'react';
+
 
 import tattoo1 from '../assets/estilos/IMG_1.jpg'
 import tattoo2 from '../assets/estilos/IMG_2.jpg'
@@ -22,33 +22,13 @@ import { GiMonkey } from 'react-icons/gi'
 
 const Home = () => {
 
-  const titleRef = useRef();
-  const textRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate__animated', 'animate__fadeInUp');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    if (titleRef.current) observer.observe(titleRef.current);
-    
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
-
-
   return (
     <>
   
       <main className={style.home_container}>
         <div className={style.quote_container}>
 
-          <div ref={titleRef} className={style.quote}>
+          <div className={style.quote}>
 
             <div><FaQuoteLeft /></div>
             <q>

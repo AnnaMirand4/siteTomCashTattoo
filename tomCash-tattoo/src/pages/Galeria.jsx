@@ -4,7 +4,6 @@ import Title from '../components/Title'
 import Subtitle from '../components/Subtitle'
 import Text from '../components/Text'
 
-import { useEffect, useRef } from 'react'
 
 import tattooPhoto from '../data/tattooPhoto'
 import tattooSelos from '../data/tattooSelos'
@@ -13,29 +12,10 @@ import tattooSelos from '../data/tattooSelos'
 
 const Galeria = () => {
   
-  const titleRef = useRef();
-  const textRefs = useRef([]);
-
-  useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate__animated', 'animate__fadeInDown');
-        }
-      });
-    }, { threshold: 0.1 });
-
-    if (titleRef.current) observer.observe(titleRef.current);
-    
-    return () => {
-      if (titleRef.current) observer.unobserve(titleRef.current);
-    };
-  }, []);
-  
   return (
     <main className={style.galleryContainer}>
       <section className={style.sectionGallery}>
-        <div ref={titleRef}>
+        <div>
         <Title content= 'Conheça meu trabalho' />
         </div>
         <Text content= 'Trabalho com uma variedade de estilos com os quais me identifico profundamente — entre eles, boldline, old school, traços inspirados em animes e desenhos autorais. Também exploramos misturas criativas de estilos, como realismo com elementos gráficos ou traços minimalistas combinados com texturas orgânicas, o que permite entregar tatuagens verdadeiramente únicas.

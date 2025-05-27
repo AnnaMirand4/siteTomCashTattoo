@@ -6,9 +6,9 @@ import 'swiper/css/autoplay';
 
 
 
-import image1 from'../assets/IMG_10.jpg'
-import image2 from '../assets/IMG_2.jpg'
-import image3 from '../assets/IMG_4.jpg'
+import image1 from'../assets/IMG_22.jpg'
+import image2 from '../assets/IMG_19.jpg'
+import image3 from '../assets/IMGselo_5.jpg'
 
 
 function Header() {
