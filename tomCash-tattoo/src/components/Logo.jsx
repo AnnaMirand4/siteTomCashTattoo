@@ -1,4 +1,4 @@
-import image from '../assets/logo1.png'
+import image from '@assets/logo1.png'
 import style from '../styles/componets/logo.module.css'
 
 const Logo = () => {

@@ -1,14 +1,14 @@
 import style from '../styles/pages/sobre.module.css'
-import Title from '../components/Title.jsx'
-import Text from '../components/Text.jsx'
-import img1 from '../assets/tatuador e studio/airton1.png'
-import img2 from '../assets/tatuador e studio/airton2.png'
+import Title from '@components/Title.jsx'
+import Text from '@components/Text.jsx'
+import img1 from '@assets/tatuador e studio/airton1.png'
+import img2 from '@assets/tatuador e studio/airton2.png'
 import { useEffect, useRef } from 'react';
 import 'animate.css';
 import ImageGallery from 'react-image-gallery'
 import "react-image-gallery/styles/css/image-gallery.css"
-import images from '../data/studioPhoto.js'
-import Subtitle from '../components/Subtitle.jsx'
+import images from '../data/studioPhoto'
+import Subtitle from '@components/Subtitle.jsx'
 
 
 
@@ -70,8 +70,8 @@ const Sobre = () => {
             <Text className={style.text} content= 'Trabalho com uma variedade de estilos com os quais me identifico profundamente — entre eles, boldline, old school, traços inspirados em animes e desenhos autorais. Também exploramos misturas criativas de estilos, como realismo com elementos gráficos ou traços minimalistas combinados com texturas orgânicas, o que permite entregar tatuagens verdadeiramente únicas.
             Gosto especialmente de usar cor como se estivesse pintando um quadro com tinta a óleo — com profundidade, textura e intenção. Essa diversidade permite que cada pessoa encontre um estilo que converse com sua identidade e história — sempre com acompanhamento técnico e artístico especializado.
             Mais do que estética, cada tatuagem pode ser um gesto de afirmação, uma escolha que carrega memória, sentimento ou até mesmo um posicionamento político e social. Tatuar é transformar pensamento em imagem, ideia em presença viva sobre a pele.
-            ' 
-          />
+            '
+            />
           
         </div>
       </section>

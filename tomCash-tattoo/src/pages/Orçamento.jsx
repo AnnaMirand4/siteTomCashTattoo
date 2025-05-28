@@ -1,6 +1,6 @@
-import Text from '../components/Text.jsx'
-import Title from '../components/Title.jsx'
-import Subtitle from '../components/Subtitle.jsx'
+import Text from '@components/Text.jsx'
+import Title from '@components/Title.jsx'
+import Subtitle from '@components/Subtitle.jsx'
 import style from '../styles/pages/orçamento.module.css'
 import { IoLogoWhatsapp } from 'react-icons/io'
 

@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import { FiMenu, FiX } from 'react-icons/fi'; // Ícones do menu hamburguer
 import style from '../styles/componets/navbar.module.css';
-import logoImage from '../assets/logo1.png';
+import logoImage from '@assets/logo1.png';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
