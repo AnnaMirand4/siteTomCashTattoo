@@ -18,8 +18,8 @@ import Title from '@components/Title.jsx'
 import { FaLocationDot, FaLocationPin } from 'react-icons/fa6'
 import ErrorBoundary from '@components/ErrorBoundary.jsx'
 import { GiMonkey } from 'react-icons/gi'
-import Button from '@/components/Button'
-import ButtonComponent from '../components/ButtonComponent'
+
+import ButtonComponent from '@components/ButtonComponent'
 
 
 const Home = () => {
