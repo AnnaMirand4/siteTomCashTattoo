@@ -4,10 +4,11 @@ const tattooPhoto = [
         thumbnail: new URL('../assets/optimized/tattoos/IMG_1.jpg', import.meta.url).href
     },
 
-    {
-        original: new URL('../assets/optimized/tattoos/IMG_2.jpg', import.meta.url).href,
-        thumbnail: new URL('../assets/optimized/tattoos/IMG_2.jpg', import.meta.url).href
-    },
+    //{
+    //  original: new URL('../assets/optimized/tattoos/IMG_2.jpg', import.meta.url).href,
+    //  thumbnail: new URL('../assets/optimized/tattoos/IMG_2.jpg', import.meta.url).href
+    //},
+ 
 
     {
         original: new URL('../assets/optimized/tattoos/IMG_3.jpg', import.meta.url).href,

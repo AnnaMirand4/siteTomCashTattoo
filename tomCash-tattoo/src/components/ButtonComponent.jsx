@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom"
-import style from '../styles/componets/button.module.css'
+import style from '../styles/componets/buttonComponent.module.css'
 
 
-const Button = ({
+const ButtonComponent = ({
     to,
     children,
     isExternal = false,
@@ -34,4 +34,4 @@ const Button = ({
     );
 };
 
-export default Button
+export default ButtonComponent

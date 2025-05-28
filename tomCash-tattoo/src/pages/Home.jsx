@@ -19,6 +19,7 @@ import { FaLocationDot, FaLocationPin } from 'react-icons/fa6'
 import ErrorBoundary from '@components/ErrorBoundary.jsx'
 import { GiMonkey } from 'react-icons/gi'
 import Button from '@/components/Button'
+import ButtonComponent from '../components/ButtonComponent'
 
 
 const Home = () => {
@@ -75,9 +76,10 @@ const Home = () => {
           <div className={style.text_miniGallery}>
             <Text content='Que tal conhecer sobre o meu trabalho? Você pode visitar a galeria clicando no botão abaixo ou acessar a galeria pelo menu lá em cima. La é você esncontrará trabalhos concluídos, meu projeto com os selo e ainda pode escolher uma arte para você!' />
           </div>
-          <Button to='/galeira'>
+          <ButtonComponent
+           to='/galeira'>
             Veja a Galeria
-          </Button>
+          </ButtonComponent>
         </section>
 
         {/*
@@ -91,14 +93,15 @@ const Home = () => {
             <Text content='Para fazer um orçamento entre em contato através do botão abaixo. Mas se tiver dúvidas de como orçar a sua tattoo confira a seção de orçamento no menu. Lembrando que você pode escolher uma das artes disponíveis para tatuar e ela será só sua!' />
           </div>
           <div className={style.buttons_budget}>
-          <Button 
+          <ButtonComponent
           to="https://instagram.com/seu-perfil" 
           isExternal={true}>
             Entre em contato
-          </Button>
-          <Button to='/orçamento'>
+          </ButtonComponent>
+          <ButtonComponent
+           to='/orçamento'>
             Faça um orçamento
-          </Button>
+          </ButtonComponent>
 
           </div>
         </section>
