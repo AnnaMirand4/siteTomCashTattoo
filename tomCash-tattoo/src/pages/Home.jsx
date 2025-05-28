@@ -12,12 +12,13 @@ import tattoo4 from '@assets/optimized/estilos/IMG_4.jpg'
 import tattoo5 from '@assets/optimized/estilos/IMG_5.jpg'
 import tattoo6 from '@assets/optimized/estilos/IMG_6.jpg'
 import Text from '@components/Text.jsx'
-import Button from '@components/Button.jsx'
+
 import Subtitle from '@/components/Subtitle.jsx'
 import Title from '@components/Title.jsx'
 import { FaLocationDot, FaLocationPin } from 'react-icons/fa6'
 import ErrorBoundary from '@components/ErrorBoundary.jsx'
 import { GiMonkey } from 'react-icons/gi'
+import Button from '@/components/Button'
 
 
 const Home = () => {
