@@ -5,6 +5,11 @@ import { fileURLToPath } from 'url';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+// Função adicionada para normalizar caminhos no Windows
+function normalizePath(path) {
+  return process.platform === 'win32' ? path.replace(/\//g, '\\') : path;
+}
+
 async function optimizeImages() {
   const assetsDir = path.join(__dirname, 'src', 'assets');
   const optimizedDir = path.join(assetsDir, 'optimized');
@@ -18,7 +23,8 @@ async function optimizeImages() {
   await fs.mkdir(optimizedDir, { recursive: true });
 
   const processImage = async (filePath, relativePath) => {
-    const outputPath = path.join(optimizedDir, relativePath);
+    // Aplicando a normalização do caminho aqui
+    const outputPath = normalizePath(path.join(optimizedDir, relativePath));
     await fs.mkdir(path.dirname(outputPath), { recursive: true });
 
     try {
