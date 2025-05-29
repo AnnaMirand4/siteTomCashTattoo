@@ -5,12 +5,12 @@ import ImageM from '@components/ImageM.jsx'
 
 
 
-import tattoo1 from '@assets/optimized/estilos/IMG_1.jpg'
-import tattoo2 from '@assets/optimized/estilos/IMG_2.jpg'
-import tattoo3 from '@assets/optimized/estilos/IMG_3.jpg'
-import tattoo4 from '@assets/optimized/estilos/IMG_4.jpg'
-import tattoo5 from '@assets/optimized/estilos/IMG_5.jpg'
-import tattoo6 from '@assets/optimized/estilos/IMG_6.jpg'
+import tattoo1 from '@assets/optimized/estilos/IMG_1.webp'
+import tattoo2 from '@assets/optimized/estilos/IMG_2.webp'
+import tattoo3 from '@assets/optimized/estilos/IMG_3.webp'
+import tattoo4 from '@assets/optimized/estilos/IMG_4.webp'
+import tattoo5 from '@assets/optimized/estilos/IMG_5.webp'
+import tattoo6 from '@assets/optimized/estilos/IMG_6.webp'
 import Text from '@components/Text.jsx'
 
 import Subtitle from '@/components/Subtitle.jsx'
