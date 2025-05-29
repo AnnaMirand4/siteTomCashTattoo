@@ -8,8 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prebuild": "npm run optimize-images",
-    "optimize": "node scripts/optimize-images.js"
+    "prebuild": "npm run optimize-images"
   },
   "dependencies": {
     "animate.css": "^4.1.1",
