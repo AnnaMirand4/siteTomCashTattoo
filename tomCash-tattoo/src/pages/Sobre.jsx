@@ -82,9 +82,10 @@ const Sobre = () => {
 
         <Title content='Salvador Tattoo Studio'/>
 
-        <Text content='O Salvador Tattoo é um estúdio que fundei com outros profissionais apaixonados pela arte da tatuagem. Localizado na Barra, um dos bairros mais icônicos de Salvador, com vista privilegiada para o mar e o Farol — um verdadeiro cartão-postal da cidade. O estúdio foi pensado para oferecer uma experiência completa, unindo excelência artística, conforto e bem-estar.
-        Cada detalhe do espaço foi projetado para acolher com cuidado, com ambiente climatizado, iluminação natural, vista inspiradora e estrutura profissional de alto padrão. Nosso compromisso é garantir não só uma tatuagem de qualidade, mas também um momento agradável, seguro e inesquecível para quem nos visita.'/>
-
+        <Text content='O Salvador Tattoo Studio é um estúdio que fundei com outros profissionais apaixonados pela arte da tatuagem. Localizado na Barra, um dos bairros mais icônicos de Salvador, com vista privilegiada para o mar e o Farol — um verdadeiro cartão-postal da cidade. O estúdio foi pensado para oferecer uma experiência completa, unindo excelência artística, conforto e bem-estar.
+        Cada detalhe do espaço foi projetado para acolher com cuidado, com ambiente climatizado, iluminação natural, vista inspiradora e estrutura profissional de alto padrão. Nosso compromisso é garantir não só uma tatuagem de qualidade, mas também um momento agradável, seguro e inesquecível para quem nos visita.
+        '/>
+        <p className={style.adress}>Estúdio localizado no Centro Comercial Barra Center - Av. Oceânica, 551 - sala 106 - Barra, Salvador - BA, 40140-080</p>
       </div>
 
       <div className={style.studio_gallery}>

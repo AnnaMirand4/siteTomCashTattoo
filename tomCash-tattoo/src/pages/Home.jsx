@@ -1,4 +1,4 @@
-import { FaInstagram, FaQuoteLeft, FaQuoteRight, FaRegClock, FaTiktok } from 'react-icons/fa'
+import { FaCommentDollar, FaInstagram, FaQuoteLeft, FaQuoteRight, FaRegClock, FaTiktok, FaWhatsapp } from 'react-icons/fa'
 import style from '../styles/pages/home.module.css'
 import GoogleReviews from '@components/GoogleReviews'
 import ImageM from '@components/ImageM.jsx'
@@ -20,6 +20,7 @@ import ErrorBoundary from '@components/ErrorBoundary.jsx'
 import { GiMonkey } from 'react-icons/gi'
 
 import ButtonComponent from '@components/ButtonComponent'
+import { GrGallery } from 'react-icons/gr'
 
 
 const Home = () => {
@@ -78,7 +79,7 @@ const Home = () => {
           </div>
           <ButtonComponent
            to='/galeira'>
-            Veja a Galeria
+            Veja a Galeria <GrGallery />
           </ButtonComponent>
         </section>
 
@@ -96,11 +97,11 @@ const Home = () => {
           <ButtonComponent
           to="https://instagram.com/seu-perfil" 
           isExternal={true}>
-            Entre em contato
+            Entre em contato <FaWhatsapp />
           </ButtonComponent>
           <ButtonComponent
            to='/orçamento'>
-            Faça um orçamento
+            Orçamento <FaCommentDollar />
           </ButtonComponent>
 
           </div>
@@ -127,14 +128,13 @@ const Home = () => {
             <div className={style.card}>
               <FaLocationDot className={style.icon} />
               <p className={style.text_card}>
-                Atualmente tatuando no Salvador TattooStudio, mesma localização. <br/>
-                na sala 106!
+              Centro Comercial Barra Center - Av. Oceânica, 551 - sala 106 - Barra, Salvador - BA.
               </p>
             </div>
             <div className={style.card}>
               <FaRegClock className={style.icon} />
               <p className={style.text_card}>
-              Horario de atendimento: <br/> 8h às 12h <br/> 14 às 18h <br/> de Segunda a Sábado
+              Horario de atendimento: <br/> 8h às 23h <br/> de Segunda à Domingo
               </p>
             </div>
           </div>

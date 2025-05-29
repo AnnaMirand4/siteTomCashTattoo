@@ -7,6 +7,7 @@ import Navbar from "./components/Navbar"
 import Galeria from "./pages/Galeria"
 import Footer from "./components/Footer"
 import WhatsAppButton from "./components/WhatsAppButton"
+import BackToTopButton from "./components/BackToTopButton"
 
 
 const Router = () => {
@@ -15,6 +16,7 @@ const Router = () => {
     <Navbar />
     <Header />
     <WhatsAppButton />
+    <BackToTopButton />
     <Routes>
             <Route path="/" element={<Home />}/>
             <Route path="sobre" element={<Sobre />}/>

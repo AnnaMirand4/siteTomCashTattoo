@@ -1,0 +1,48 @@
+/* BackToTop.module.css */
+
+.backToTopButton {
+  position: fixed;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  background-color: var(--details-color); 
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.backToTopButton.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backToTopButton:hover {
+  background-color: rgba(243, 193, 128, 0.7); 
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .backToTopButton {
+    width: 2.5rem;
+    height: 2.5rem;
+    bottom: 1rem;
+    right: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .backToTopButton {
+    width: 2.2rem;
+    height: 2.2rem;
+  }
+}

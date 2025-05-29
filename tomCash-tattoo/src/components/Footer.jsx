@@ -7,7 +7,7 @@ const Footer = () => {
     <div className={style.footer_container}>
 
       <div className={style.footer_text}>
-        <p>Copyright© 2025 TomCash Tattoo | Desenvolvido por <a href="www.linkedin.com/in/anna-caroline-miranda-martins" target="_blank">Anna</a></p> 
+         <p>Copyright© 2025 TomCash Tattoo | Desenvolvido por <a href="https://www.linkedin.com/in/anna-caroline-miranda-martins/" target="_blank" alt="Anna LinkedIn"> Anna </a></p>
         
       </div>
 

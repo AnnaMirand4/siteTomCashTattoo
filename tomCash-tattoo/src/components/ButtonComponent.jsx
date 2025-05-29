@@ -15,7 +15,7 @@ const ButtonComponent = ({
                 href={to}
                 target="_blank"
                 rel="noopener noreferrer"
-                className = {style.button}
+                className = {style.btn}
                 onClick={onclick}
             >
                 {children}
@@ -27,7 +27,7 @@ const ButtonComponent = ({
         <Link
             to={to}
             onClick={onclick}
-            className = {style.button}
+            className = {style.btn}
         >
             {children}
         </Link>
