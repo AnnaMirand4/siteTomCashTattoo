@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prebuild": "npm run optimize-images",
+    "prebuild": "npm run optimize",
     "optimize": "node scripts/optimize-images.js"
   },
   "dependencies": {
